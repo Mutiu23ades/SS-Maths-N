@@ -1,1 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SSS Mathematics N</title>
 
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f2f7ff;
+  color:#172033;
+  line-height:1.65;
+}
+header{
+  background:#0756a8;
+  color:white;
+  padding:22px 15px;
+  text-align:center;
+}
+header h1{margin:0;font-size:26px}
+header p{margin:6px 0 0;font-size:15px}
+
+.container{
+  max-width:1000px;
+  margin:auto;
+  padding:15px;
+}
+
+.card{
+  background:white;
+  margin:15px 0;
+  padding:18px;
+  border-radius:12px;
+  box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+select,button{
+  width:100%;
+  padding:13px;
+  border-radius:8px;
+  border:1px solid #bbb;
+  font-size:16px;
+}
+button{
+  background:#0756a8;
+  color:white;
+  border:none;
+  margin-top:10px;
+  cursor:pointer;
+}
+button:hover{background:#043d79}
+
+h2{color:#0756a8}
+h3{color:#06457f}
+h4{color:#333}
+
+.formula{
+  background:#eef6ff;
+  border-left:5px solid #0756a8;
+  padding:12px;
+  margin:12px 0;
+  font-weight:bold;
+}
+
+.example{
+  background:#f7fbff;
+  border:1px solid #c9dff7;
+  padding:14px;
+  margin:14px 0;
+  border-radius:8px;
+}
+
+.answer{
+  background:#edf9ef;
+  border-left:5px solid #299447;
+  padding:10px;
+  margin-top:8px;
+}
+
+.warning{
+  background:#fff6df;
+  border-left:5px solid #e09b00;
+  padding:10px;
+}
+
+ul,ol{padding-left:25px}
+.hidden{display:none}
+
+.score{
+  font-size:20px;
+  font-weight:bold;
+  color:#0756a8;
+  margin-top:15px;
+}
+
+.topic-list button{
+  text-align:left;
+  background:white;
+  color:#0756a8;
+  border:1px solid #c7d8ea;
+}
+.topic-list button:hover{
+  background:#eaf3ff;
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:#666;
+  font-size:13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>SSS MATHEMATICS – APP N</h1>
+  <p>Topics 66–70 | Comprehensive Senior Secondary Mathematics</p>
+</header>
+
+<div class="container">
+
+<div class="card">
+  <h2>Select a Topic</h2>
+  <select id="topicSelect" onchange="showTopic()">
+    <option value="">-- Select Topic --</option>
+    <option value="66">66. Ratio, Proportion and Rates</option>
+    <option value="67">67. Percentages and Financial Mathematics</option>
+    <option value="68">68. Profit, Loss, Discount and Commission</option>
+    <option value="69">69. Depreciation and Appreciation</option>
+    <option value="70">70. Business Mathematics</option>
+  </select>
+</div>
+
+<div id="content"></div>
+
+</div>
+
+<footer>
+  SSS Mathematics App N • Topics 66–70
+</footer>
+
+<script>
+
+const topics = {
+
+/* ========================= TOPIC 66 ========================= */
+
+66: `
+<div class="card">
+<h2>Topic 66: Ratio, Proportion and Rates</h2>
+
+<h3>Learning Objectives</h3>
+<p>By the end of this lesson, students should be able to:</p>
+<ul>
+<li>Define ratio and express quantities in ratio form.</li>
+<li>Simplify ratios.</li>
+<li>Divide quantities in a given ratio.</li>
+<li>Solve problems involving proportion.</li>
+<li>Distinguish between direct and inverse proportion.</li>
+<li>Solve problems involving rates.</li>
+<li>Apply ratios and rates to real-life situations.</li>
+</ul>
+
+<h3>1. Meaning of Ratio</h3>
+<p>
+A ratio is a comparison of two or more quantities of the same kind.
+It tells us how many times one quantity contains another.
+</p>
+
+<div class="formula">
+Ratio of a to b = a : b = a/b
+</div>
+
+<p>The quantities being compared must normally be expressed in the same units.</p>
+
+<div class="example">
+<b>Example 1:</b> Express 20 boys to 30 girls as a ratio in its simplest form.
+<br><br>
+20 : 30
+<br>
+Divide both terms by 10:
+<br>
+= 2 : 3
+<div class="answer"><b>Answer: 2 : 3</b></div>
+</div>
+
+<h3>2. Ratios Involving Units</h3>
+<p>Before simplifying a ratio, convert the quantities to the same unit.</p>
+
+<div class="example">
+<b>Example 2:</b> Find the ratio of 2 m to 50 cm.
+<br><br>
+2 m = 200 cm
+<br>
+Therefore:
+<br>
+200 : 50 = 4 : 1
+<div class="answer"><b>Answer: 4 : 1</b></div>
+</div>
+
+<h3>3. Dividing a Quantity in a Given Ratio</h3>
+
+<p>
+To divide a quantity in the ratio a:b:
+</p>
+<ol>
+<li>Add the ratio parts.</li>
+<li>Divide the total quantity by the sum of the parts.</li>
+<li>Multiply by each ratio part.</li>
+</ol>
+
+<div class="example">
+<b>Example 3:</b> Divide ₦72,000 between Tunde and Musa in the ratio 5:3.
+<br><br>
+Total parts = 5 + 3 = 8
+<br>
+Value of one part = 72,000 ÷ 8 = ₦9,000
+<br>
+Tunde = 5 × 9,000 = ₦45,000
+<br>
+Musa = 3 × 9,000 = ₦27,000
+<div class="answer"><b>Answer: ₦45,000 and ₦27,000</b></div>
+</div>
+
+<h3>4. Proportion</h3>
+<p>
+A proportion is a statement that two ratios are equal.
+</p>
+
+<div class="formula">
+a : b = c : d  means  a/b = c/d
+</div>
+
+<p>Cross multiplication can be used:</p>
+
+<div class="formula">
+ad = bc
+</div>
+
+<div class="example">
+<b>Example 4:</b> If 4 : 7 = x : 21, find x.
+<br><br>
+4/7 = x/21
+<br>
+7x = 4 × 21
+<br>
+7x = 84
+<br>
+x = 12
+<div class="answer"><b>Answer: x = 12</b></div>
+</div>
+
+<h3>5. Direct Proportion</h3>
+<p>
+Two quantities are directly proportional when an increase in one causes a
+corresponding increase in the other, or a decrease in one causes a decrease
+in the other.
+</p>
+
+<div class="formula">
+y ∝ x
+<br>
+Therefore y = kx
+</div>
+
+<div class="example">
+<b>Example 5:</b> If 5 books cost ₦4,000, how much will 8 books cost?
+<br><br>
+Cost per book = 4,000 ÷ 5 = ₦800
+<br>
+Cost of 8 = 8 × 800 = ₦6,400
+<div class="answer"><b>Answer: ₦6,400</b></div>
+</div>
+
+<h3>6. Inverse Proportion</h3>
+<p>
+Two quantities are inversely proportional when an increase in one quantity
+causes a corresponding decrease in the other.
+</p>
+
+<div class="formula">
+y ∝ 1/x
+<br>
+Therefore xy = k
+</div>
+
+<div class="example">
+<b>Example 6:</b> Six workers complete a job in 12 days. Assuming the rate
+of work is the same, how many days will 8 workers take?
+<br><br>
+Workers × days = constant
+<br>
+6 × 12 = 8 × x
+<br>
+72 = 8x
+<br>
+x = 9
+<div class="answer"><b>Answer: 9 days</b></div>
+</div>
+
+<h3>7. Rates</h3>
+<p>
+A rate compares two quantities measured in different units.
+Examples include speed, wages per hour, fuel consumption and population
+growth per year.
+</p>
+
+<div class="formula">
+Rate = Quantity ÷ Time
+<br><br>
+Speed = Distance ÷ Time
+</div>
+
+<div class="example">
+<b>Example 7:</b> A car travels 240 km in 4 hours. Find its average speed.
+<br><br>
+Speed = 240 ÷ 4
+<br>
+= 60 km/h
+<div class="answer"><b>Answer: 60 km/h</b></div>
+</div>
+
+<h3>Practice Questions</h3>
+<ol>
+<li>Simplify 36:48.</li>
+<li>Express 3 m to 75 cm as a ratio.</li>
+<li>Divide ₦90,000 in the ratio 4:5.</li>
+<li>If 7:9 = x:45, find x.</li>
+<li>If 6 pens cost ₦1,800, find the cost of 15 pens.</li>
+<li>Ten workers complete a job in 18 days. How long will 15 workers take?</li>
+<li>A vehicle travels 360 km in 5 hours. Find its average speed.</li>
+</ol>
+</div>
+`,
+
+/* ========================= TOPIC 67 ========================= */
+
+67: `
+<div class="card">
+<h2>Topic 67: Percentages and Financial Mathematics</h2>
+
+<h3>Learning Objectives</h3>
+<ul>
+<li>Understand percentage as a fraction out of 100.</li>
+<li>Convert fractions and decimals to percentages.</li>
+<li>Find percentages of quantities.</li>
+<li>Calculate percentage increase and decrease.</li>
+<li>Solve financial percentage problems.</li>
+<li>Apply simple interest and compound interest.</li>
+</ul>
+
+<h3>1. Meaning of Percentage</h3>
+
+<p>
+Percentage means "per hundred".
+</p>
+
+<div class="formula">
+x% = x/100
+</div>
+
+<div class="example">
+<b>Example 1:</b> Convert 0.35 to a percentage.
+<br><br>
+0.35 × 100% = 35%
+<div class="answer"><b>Answer: 35%</b></div>
+</div>
+
+<h3>2. Finding a Percentage of a Quantity</h3>
+
+<div class="example">
+<b>Example 2:</b> Find 15% of ₦80,000.
+<br><br>
+15% of 80,000
+<br>
+= 15/100 × 80,000
+<br>
+= ₦12,000
+<div class="answer"><b>Answer: ₦12,000</b></div>
+</div>
+
+<h3>3. Percentage Increase</h3>
+
+<div class="formula">
+Percentage increase =
+Increase ÷ Original value × 100%
+</div>
+
+<div class="example">
+<b>Example 3:</b> The price of an item rises from ₦20,000 to ₦25,000.
+Find the percentage increase.
+<br><br>
+Increase = 25,000 − 20,000 = 5,000
+<br>
+Percentage increase = 5,000/20,000 × 100
+<br>
+= 25%
+<div class="answer"><b>Answer: 25%</b></div>
+</div>
+
+<h3>4. Percentage Decrease</h3>
+
+<div class="formula">
+Percentage decrease =
+Decrease ÷ Original value × 100%
+</div>
+
+<div class="example">
+<b>Example 4:</b> A price falls from ₦50,000 to ₦42,500.
+Find the percentage decrease.
+<br><br>
+Decrease = 50,000 − 42,500 = 7,500
+<br>
+Percentage decrease = 7,500/50,000 × 100
+<br>
+= 15%
+<div class="answer"><b>Answer: 15%</b></div>
+</div>
+
+<h3>5. Simple Interest</h3>
+
+<div class="formula">
+I = PRT/100
+<br><br>
+Amount = Principal + Interest
+</div>
+
+<p>Where:</p>
+<ul>
+<li>P = principal</li>
+<li>R = rate per annum</li>
+<li>T = time in years</li>
+</ul>
+
+<div class="example">
+<b>Example 5:</b> Find the simple interest on ₦200,000 at 8% per annum
+for 3 years.
+<br><br>
+I = 200,000 × 8 × 3 / 100
+<br>
+= ₦48,000
+<br>
+Amount = ₦248,000
+<div class="answer"><b>Interest = ₦48,000; Amount = ₦248,000</b></div>
+</div>
+
+<h3>6. Compound Interest</h3>
+
+<div class="formula">
+A = P(1 + r/100)^n
+<br><br>
+Compound Interest = A − P
+</div>
+
+<div class="example">
+<b>Example 6:</b> Find the amount on ₦100,000 invested at 10% compound
+interest per annum for 2 years.
+<br><br>
+A = 100,000(1 + 10/100)^2
+<br>
+= 100,000(1.1)^2
+<br>
+= ₦121,000
+<br>
+Compound interest = 121,000 − 100,000
+<br>
+= ₦21,000
+<div class="answer"><b>Answer: Amount = ₦121,000; CI = ₦21,000</b></div>
+</div>
+
+<h3>Practice Questions</h3>
+<ol>
+<li>Convert 0.72 to a percentage.</li>
+<li>Find 18% of ₦75,000.</li>
+<li>A price rises from ₦40,000 to ₦46,000. Find the percentage increase.</li>
+<li>A machine worth ₦800,000 loses ₦120,000 in value. Find the percentage decrease.</li>
+<li>Find the simple interest on ₦150,000 at 12% per annum for 2 years.</li>
+<li>Find the amount on ₦200,000 at 5% compound interest for 2 years.</li>
+</ol>
+</div>
+`,
+
+/* ========================= TOPIC 68 ========================= */
+
+68: `
+<div class="card">
+<h2>Topic 68: Profit, Loss, Discount and Commission</h2>
+
+<h3>Learning Objectives</h3>
+<ul>
+<li>Define cost price and selling price.</li>
+<li>Calculate profit and loss.</li>
+<li>Calculate percentage profit and loss.</li>
+<li>Calculate discount and selling price after discount.</li>
+<li>Understand commission.</li>
+<li>Solve commercial arithmetic problems.</li>
+</ul>
+
+<h3>1. Cost Price and Selling Price</h3>
+<p>
+<b>Cost Price (CP)</b> is the amount spent to acquire an item.
+<b>Selling Price (SP)</b> is the amount for which the item is sold.
+</p>
+
+<h3>2. Profit</h3>
+
+<div class="formula">
+Profit = Selling Price − Cost Price
+</div>
+
+<div class="example">
+<b>Example 1:</b> A trader buys a television for ₦250,000 and sells it for
+₦290,000. Find the profit.
+<br><br>
+Profit = 290,000 − 250,000
+<br>
+= ₦40,000
+<div class="answer"><b>Answer: ₦40,000</b></div>
+</div>
+
+<h3>3. Percentage Profit</h3>
+
+<div class="formula">
+Percentage Profit =
+Profit ÷ Cost Price × 100%
+</div>
+
+<div class="example">
+<b>Example 2:</b> A trader buys an item for ₦80,000 and sells it for
+₦100,000. Find the percentage profit.
+<br><br>
+Profit = 100,000 − 80,000 = 20,000
+<br>
+Percentage profit = 20,000/80,000 × 100
+<br>
+= 25%
+<div class="answer"><b>Answer: 25%</b></div>
+</div>
+
+<h3>4. Loss</h3>
+
+<div class="formula">
+Loss = Cost Price − Selling Price
+</div>
+
+<div class="example">
+<b>Example 3:</b> An article bought for ₦120,000 is sold for ₦102,000.
+Find the loss and percentage loss.
+<br><br>
+Loss = 120,000 − 102,000 = ₦18,000
+<br>
+Percentage loss = 18,000/120,000 × 100
+<br>
+= 15%
+<div class="answer"><b>Answer: Loss = ₦18,000; Percentage loss = 15%</b></div>
+</div>
+
+<h3>5. Discount</h3>
+<p>
+A discount is an amount deducted from the marked price of an article.
+</p>
+
+<div class="formula">
+Discount = Marked Price − Selling Price
+<br><br>
+Percentage Discount =
+Discount ÷ Marked Price × 100%
+</div>
+
+<div class="example">
+<b>Example 4:</b> A shirt marked ₦50,000 is sold at a 12% discount.
+Find the selling price.
+<br><br>
+Discount = 12/100 × 50,000
+<br>
+= ₦6,000
+<br>
+Selling price = 50,000 − 6,000
+<br>
+= ₦44,000
+<div class="answer"><b>Answer: ₦44,000</b></div>
+</div>
+
+<h3>6. Commission</h3>
+<p>
+Commission is payment made to an agent or salesperson based on the value
+of sales made.
+</p>
+
+<div class="formula">
+Commission = Rate × Sales / 100
+</div>
+
+<div class="example">
+<b>Example 5:</b> An agent receives 5% commission on sales of ₦2,400,000.
+Find the commission.
+<br><br>
+Commission = 5/100 × 2,400,000
+<br>
+= ₦120,000
+<div class="answer"><b>Answer: ₦120,000</b></div>
+</div>
+
+<h3>7. Reverse Commercial Problems</h3>
+
+<div class="example">
+<b>Example 6:</b> An article is sold for ₦138,000 at a profit of 15%.
+Find its cost price.
+<br><br>
+SP = 115% of CP
+<br>
+138,000 = 115/100 × CP
+<br>
+CP = 138,000 × 100/115
+<br>
+= ₦120,000
+<div class="answer"><b>Answer: ₦120,000</b></div>
+</div>
+
+<h3>Practice Questions</h3>
+<ol>
+<li>An article bought for ₦60,000 is sold for ₦75,000. Find the profit.</li>
+<li>Find the percentage profit in Question 1.</li>
+<li>An item bought for ₦90,000 is sold for ₦81,000. Find the percentage loss.</li>
+<li>A radio marked ₦80,000 is discounted by 15%. Find its selling price.</li>
+<li>An agent earns 4% commission on sales of ₦3,500,000. Find the commission.</li>
+<li>An article is sold for ₦172,500 at a profit of 15%. Find the cost price.</li>
+</ol>
+</div>
+`,
+
+/* ========================= TOPIC 69 ========================= */
+
+69: `
+<div class="card">
+<h2>Topic 69: Depreciation and Appreciation</h2>
+
+<h3>Learning Objectives</h3>
+<ul>
+<li>Understand depreciation and appreciation.</li>
+<li>Calculate percentage depreciation.</li>
+<li>Calculate percentage appreciation.</li>
+<li>Use repeated percentage changes.</li>
+<li>Solve real-life financial problems involving assets and investments.</li>
+</ul>
+
+<h3>1. Depreciation</h3>
+<p>
+Depreciation is the decrease in the value of an asset over time.
+Examples include vehicles, machines, computers and equipment.
+</p>
+
+<div class="formula">
+Depreciation = Original Value − New Value
+</div>
+
+<div class="example">
+<b>Example 1:</b> A vehicle bought for ₦8,000,000 is now worth ₦6,800,000.
+Find the depreciation.
+<br><br>
+Depreciation = 8,000,000 − 6,800,000
+<br>
+= ₦1,200,000
+<div class="answer"><b>Answer: ₦1,200,000</b></div>
+</div>
+
+<h3>2. Percentage Depreciation</h3>
+
+<div class="formula">
+Percentage depreciation =
+Loss in value ÷ Original value × 100%
+</div>
+
+<div class="example">
+<b>Example 2:</b> A machine falls in value from ₦500,000 to ₦425,000.
+Find the percentage depreciation.
+<br><br>
+Depreciation = 75,000
+<br>
+Percentage = 75,000/500,000 × 100
+<br>
+= 15%
+<div class="answer"><b>Answer: 15%</b></div>
+</div>
+
+<h3>3. Depreciation by a Fixed Percentage</h3>
+
+<p>
+If an asset depreciates by r% each year, its value after one year is:
+</p>
+
+<div class="formula">
+New Value = Original Value × (1 − r/100)
+</div>
+
+<div class="example">
+<b>Example 3:</b> A machine worth ₦1,000,000 depreciates by 10% per year.
+Find its value after one year.
+<br><br>
+Value = 1,000,000 × 0.90
+<br>
+= ₦900,000
+<div class="answer"><b>Answer: ₦900,000</b></div>
+</div>
+
+<h3>4. Compound Depreciation</h3>
+
+<div class="formula">
+V = P(1 − r/100)^n
+</div>
+
+<p>Where V is the final value, P is the initial value, r is the annual
+depreciation rate and n is the number of years.</p>
+
+<div class="example">
+<b>Example 4:</b> A car costs ₦5,000,000 and depreciates at 10% per annum.
+Find its value after 3 years.
+<br><br>
+V = 5,000,000(0.9)^3
+<br>
+= 5,000,000 × 0.729
+<br>
+= ₦3,645,000
+<div class="answer"><b>Answer: ₦3,645,000</b></div>
+</div>
+
+<h3>5. Appreciation</h3>
+<p>
+Appreciation is an increase in the value of an asset.
+For example, land and some properties may appreciate in value.
+</p>
+
+<div class="formula">
+New Value = Original Value × (1 + r/100)
+</div>
+
+<div class="example">
+<b>Example 5:</b> A piece of land worth ₦4,000,000 appreciates by 12%.
+Find its new value.
+<br><br>
+New value = 4,000,000 × 1.12
+<br>
+= ₦4,480,000
+<div class="answer"><b>Answer: ₦4,480,000</b></div>
+</div>
+
+<h3>6. Compound Appreciation</h3>
+
+<div class="formula">
+V = P(1 + r/100)^n
+</div>
+
+<div class="example">
+<b>Example 6:</b> A property worth ₦6,000,000 appreciates by 8% per year.
+Find its value after 2 years.
+<br><br>
+V = 6,000,000(1.08)^2
+<br>
+= 6,000,000 × 1.1664
+<br>
+= ₦6,998,400
+<div class="answer"><b>Answer: ₦6,998,400</b></div>
+</div>
+
+<h3>Practice Questions</h3>
+<ol>
+<li>A machine bought for ₦900,000 is now worth ₦765,000. Find its depreciation.</li>
+<li>Find the percentage depreciation in Question 1.</li>
+<li>A car worth ₦4,000,000 depreciates by 15% in one year. Find its new value.</li>
+<li>A machine worth ₦2,000,000 depreciates by 10% annually. Find its value after 2 years.</li>
+<li>A property worth ₦5,000,000 appreciates by 10%. Find its new value.</li>
+<li>A house worth ₦8,000,000 appreciates by 5% annually. Find its value after 3 years.</li>
+</ol>
+</div>
+`,
+
+/* ========================= TOPIC 70 ========================= */
+
+70: `
+<div class="card">
+<h2>Topic 70: Business Mathematics</h2>
+
+<h3>Learning Objectives</h3>
+<ul>
+<li>Apply mathematics to business situations.</li>
+<li>Calculate revenue, cost and profit.</li>
+<li>Understand fixed and variable costs.</li>
+<li>Calculate break-even point.</li>
+<li>Solve problems involving wages and salaries.</li>
+<li>Apply commission and commercial percentages.</li>
+</ul>
+
+<h3>1. Revenue</h3>
+<p>
+Revenue is the total income obtained from selling goods or services.
+</p>
+
+<div class="formula">
+Revenue = Selling Price × Quantity Sold
+</div>
+
+<div class="example">
+<b>Example 1:</b> A trader sells 250 bags of rice at ₦75,000 each.
+Find the total revenue.
+<br><br>
+Revenue = 250 × 75,000
+<br>
+= ₦18,750,000
+<div class="answer"><b>Answer: ₦18,750,000</b></div>
+</div>
+
+<h3>2. Cost</h3>
+<p>
+Business costs can include rent, salaries, transportation, raw materials,
+electricity and other expenses.
+</p>
+
+<p><b>Fixed costs</b> remain unchanged within a given level of activity.</p>
+<p><b>Variable costs</b> change according to the level of production or sales.</p>
+
+<div class="formula">
+Total Cost = Fixed Cost + Variable Cost
+</div>
+
+<div class="example">
+<b>Example 2:</b> A business has fixed costs of ₦500,000 and variable costs
+of ₦25,000 per unit. Find the total cost of producing 40 units.
+<br><br>
+Variable cost = 25,000 × 40 = ₦1,000,000
+<br>
+Total cost = 500,000 + 1,000,000
+<br>
+= ₦1,500,000
+<div class="answer"><b>Answer: ₦1,500,000</b></div>
+</div>
+
+<h3>3. Profit</h3>
+
+<div class="formula">
+Profit = Total Revenue − Total Cost
+</div>
+
+<div class="example">
+<b>Example 3:</b> A business has revenue of ₦3,500,000 and total cost of
+₦2,800,000. Find its profit.
+<br><br>
+Profit = 3,500,000 − 2,800,000
+<br>
+= ₦700,000
+<div class="answer"><b>Answer: ₦700,000</b></div>
+</div>
+
+<h3>4. Break-Even Point</h3>
+<p>
+The break-even point is the level of sales at which total revenue equals
+total cost. At this point there is neither profit nor loss.
+</p>
+
+<div class="formula">
+Break-even quantity =
+Fixed Cost ÷ (Selling Price per Unit − Variable Cost per Unit)
+</div>
+
+<div class="example">
+<b>Example 4:</b> A company has fixed costs of ₦600,000. Each item is sold
+for ₦10,000 and the variable cost per item is ₦4,000.
+Find the break-even quantity.
+<br><br>
+Break-even quantity =
+600,000 ÷ (10,000 − 4,000)
+<br>
+= 600,000 ÷ 6,000
+<br>
+= 100 units
+<div class="answer"><b>Answer: 100 units</b></div>
+</div>
+
+<h3>5. Wages</h3>
+<p>
+Workers may be paid hourly, daily, weekly or monthly.
+</p>
+
+<div class="formula">
+Wage = Rate per hour × Number of hours
+</div>
+
+<div class="example">
+<b>Example 5:</b> A worker earns ₦1,500 per hour and works 40 hours per week.
+Find the weekly wage.
+<br><br>
+Weekly wage = 1,500 × 40
+<br>
+= ₦60,000
+<div class="answer"><b>Answer: ₦60,000</b></div>
+</div>
+
+<h3>6. Overtime</h3>
+<p>
+Overtime is work done beyond the normal working hours and may attract a
+higher rate.
+</p>
+
+<div class="example">
+<b>Example 6:</b> A worker earns ₦1,200 per hour normally and ₦1,800 per
+hour for overtime. If he works 40 normal hours and 5 overtime hours,
+find his total weekly wage.
+<br><br>
+Normal pay = 40 × 1,200 = ₦48,000
+<br>
+Overtime pay = 5 × 1,800 = ₦9,000
+<br>
+Total = ₦57,000
+<div class="answer"><b>Answer: ₦57,000</b></div>
+</div>
+
+<h3>7. Business Decision Problems</h3>
+<p>
+Business mathematics can be used to decide selling prices, production
+levels, wages, discounts and expected profits.
+</p>
+
+<div class="example">
+<b>Example 7:</b> A manufacturer produces 500 units. The fixed cost is
+₦400,000 and the variable cost is ₦2,000 per unit. Each unit is sold for
+₦3,500. Find the profit.
+<br><br>
+Variable cost = 500 × 2,000 = ₦1,000,000
+<br>
+Total cost = 400,000 + 1,000,000 = ₦1,400,000
+<br>
+Revenue = 500 × 3,500 = ₦1,750,000
+<br>
+Profit = 1,750,000 − 1,400,000
+<br>
+= ₦350,000
+<div class="answer"><b>Answer: ₦350,000</b></div>
+</div>
+
+<h3>Practice Questions</h3>
+<ol>
+<li>A trader sells 120 items at ₦8,500 each. Find the revenue.</li>
+<li>A business has fixed costs of ₦300,000 and variable costs of ₦15,000 per unit. Find the total cost of 50 units.</li>
+<li>A business has revenue of ₦5,000,000 and total cost of ₦4,200,000. Find the profit.</li>
+<li>Fixed cost is ₦900,000, selling price per unit is ₦15,000 and variable cost per unit is ₦6,000. Find the break-even quantity.</li>
+<li>A worker earns ₦2,000 per hour and works 45 hours. Find the wage.</li>
+<li>A company produces 800 units at a variable cost of ₦1,500 per unit. Fixed cost is ₦500,000 and selling price is ₦2,800 per unit. Find the profit.</li>
+</ol>
+</div>
+`
+};
+
+/* ========================= DISPLAY ========================= */
+
+function showTopic(){
+  const value = document.getElementById("topicSelect").value;
+  const content = document.getElementById("content");
+
+  if(value && topics[value]){
+    content.innerHTML = topics[value] + practiceSection(value);
+    window.scrollTo({top:0,behavior:"smooth"});
+  } else {
+    content.innerHTML = "";
+  }
+}
+
+/* ========================= PRACTICE / TEST ========================= */
+
+function practiceSection(topic){
+
+let questions = [];
+
+if(topic == 66){
+questions = [
+["Simplify 45:60.","3:4"],
+["Divide ₦80,000 in the ratio 3:5.","₦30,000 and ₦50,000"],
+["If 5:8 = x:40, find x.","25"],
+["If 6 workers take 10 days, how long will 12 workers take?","5 days"],
+["A car travels 300 km in 5 hours. Find its speed.","60 km/h"]
+];
+}
+
+if(topic == 67){
+questions = [
+["Convert 0.45 to a percentage.","45%"],
+["Find 20% of ₦90,000.","₦18,000"],
+["A price rises from ₦40,000 to ₦50,000. Find the percentage increase.","25%"],
+["Find the simple interest on ₦100,000 at 10% for 2 years.","₦20,000"],
+["Find the amount on ₦100,000 at 10% compound interest for 2 years.","₦121,000"]
+];
+}
+
+if(topic == 68){
+questions = [
+["An item bought for ₦50,000 is sold for ₦60,000. Find the profit.","₦10,000"],
+["Find the percentage profit in Question 1.","20%"],
+["An item bought for ₦80,000 is sold for ₦68,000. Find the loss.","₦12,000"],
+["An item marked ₦100,000 is discounted by 20%. Find the selling price.","₦80,000"],
+["Find 5% commission on ₦2,000,000.","₦100,000"]
+];
+}
+
+if(topic == 69){
+questions = [
+["An asset falls from ₦500,000 to ₦450,000. Find the depreciation.","₦50,000"],
+["Find the percentage depreciation.","10%"],
+["A ₦2,000,000 machine depreciates by 10%. Find its value after one year.","₦1,800,000"],
+["A ₦1,000,000 asset depreciates by 20% for 2 years. Find its value.","₦640,000"],
+["A ₦5,000,000 property appreciates by 10%. Find its new value.","₦5,500,000"]
+];
+}
+
+if(topic == 70){
+questions = [
+["A trader sells 100 items at ₦5,000 each. Find the revenue.","₦500,000"],
+["Fixed cost is ₦200,000 and variable cost is ₦10,000 per unit. Find the cost of 20 units.","₦400,000"],
+["Revenue is ₦2,000,000 and total cost is ₦1,600,000. Find the profit.","₦400,000"],
+["Fixed cost is ₦500,000, selling price ₦5,000 and variable cost ₦3,000. Find break-even quantity.","250 units"],
+["A worker earns ₦1,500 per hour for 40 hours. Find the wage.","₦60,000"]
+];
+}
+
+let html = `
+<div class="card">
+<h2>Quick Test</h2>
+<p>Answer the following questions. Select the correct answer.</p>
+`;
+
+questions.forEach((q,i)=>{
+html += `
+<div class="example">
+<b>${i+1}. ${q[0]}</b>
+<input type="text" id="q${topic}_${i}"
+style="width:100%;padding:12px;margin-top:10px;border:1px solid #bbb;border-radius:7px">
+</div>
+`;
+});
+
+html += `
+<button onclick="markTest(${topic})">Submit Test</button>
+<div id="result${topic}" class="score"></div>
+</div>
+`;
+
+return html;
+}
+
+function normalise(text){
+return text
+.toLowerCase()
+.replace(/[₦,]/g,"")
+.replace(/\s+/g," ")
+.trim();
+}
+
+function markTest(topic){
+
+let answers = [];
+let questions = [];
+
+if(topic == 66)
+answers=["3:4","₦30,000 and ₦50,000","25","5 days","60 km/h"];
+
+if(topic == 67)
+answers=["45%","₦18,000","25%","₦20,000","₦121,000"];
+
+if(topic == 68)
+answers=["₦10,000","20%","₦12,000","₦80,000","₦100,000"];
+
+if(topic == 69)
+answers=["₦50,000","10%","₦1,800,000","₦640,000","₦5,500,000"];
+
+if(topic == 70)
+answers=["₦500,000","₦400,000","₦400,000","250 units","₦60,000"];
+
+let score=0;
+
+answers.forEach((answer,i)=>{
+let input=document.getElementById(`q${topic}_${i}`);
+if(normalise(input.value) === normalise(answer)){
+score++;
+}
+});
+
+document.getElementById(`result${topic}`).innerHTML =
+"Score: " + score + " / " + answers.length +
+"<br>" +
+(score === answers.length
+? "Excellent! You answered all questions correctly."
+: "Good effort. Review the lesson and try the test again.");
+}
+
+</script>
+
+</body>
+</html>
